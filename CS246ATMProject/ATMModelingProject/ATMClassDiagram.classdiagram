@@ -1,22 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2e907a61-58ea-4deb-8fcc-6464af014747" name="ATMClassDiagram" linkedPackageId="6af425b4-8547-4e6a-9a13-193b87ae7449" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="28ebd062-897b-418e-9154-a26e253f942b">
-      <profileInstance Id="c43d25c0-9f3f-4040-8d54-d60bdc5b5f8b" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="54aec824-3ab7-4ffe-bbdc-36a80401ca67">
-      <profileInstance Id="e9cacf69-3913-496b-8f6c-bc690f6e7b2e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="2e907a61-58ea-4deb-8fcc-6464af014747" name="ATMClassDiagram" linkedPackageId="6af425b4-8547-4e6a-9a13-193b87ae7449" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="12c0e736-54bc-4d4b-a47b-295595ab3840" name="Transaction" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="12c0e736-54bc-4d4b-a47b-295595ab3840" name="Transaction Record" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="fb759789-230a-4491-9acc-00e828890d31" />
         <ownedAttributesInternal>
           <property Id="16ce5b8e-d52c-4ea8-8923-156d46ea3e9a" name="!TransactionID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -56,6 +42,9 @@
           <property Id="54bb0f3e-6435-4c21-9f10-ea62a2d52b92" name="AccountHolder" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0c9fa0a5-cf65-4679-8072-3093bfdca2da" />
           </property>
+          <property Id="ce6e368c-6288-418f-8f1c-e40df446d563" name="Transactions&lt;list&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4c697d04-a9d0-4498-9c1c-e1bc3b12090e" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -85,20 +74,26 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2e446904-4b91-4662-82b7-5fd2355c9948" name="Transactions" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="af7d4d08-eb77-4135-a1d6-fd4a27af2011" />
-        <ownedAttributesInternal>
-          <property Id="514912d1-762f-47c4-ad48-4e70c58b3b37" name="!ListID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="48944d88-0108-4b4c-80ae-af7b14d78ca8" />
-          </property>
-          <property Id="9e38726e-d67c-4067-8a04-cbeeaa7f3aa0" name="Transaction&lt;list&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="fcb29ea8-47eb-4c83-b0f2-630d39cd4699" />
-          </property>
-        </ownedAttributesInternal>
+      <class Id="206f8e61-f7ba-49d2-9ffa-68ffa7bb3fd8" name="ATM" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e30b1a84-1030-495f-95e7-183799161c83" />
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="6af425b4-8547-4e6a-9a13-193b87ae7449" name="ATMModelingProject">
     <elementDefinition Id="e3b9c6d9-3f81-402b-b0c6-049c28d4bc4e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="28ebd062-897b-418e-9154-a26e253f942b">
+        <profileInstance Id="c43d25c0-9f3f-4040-8d54-d60bdc5b5f8b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="54aec824-3ab7-4ffe-bbdc-36a80401ca67">
+        <profileInstance Id="e9cacf69-3913-496b-8f6c-bc690f6e7b2e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

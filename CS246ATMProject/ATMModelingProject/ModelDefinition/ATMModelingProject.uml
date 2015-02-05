@@ -27,7 +27,7 @@
     <packageHasNamedElement>
       <class
         Id="fb759789-230a-4491-9acc-00e828890d31"
-        name="Transaction"
+        name="Transaction Record"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -145,6 +145,17 @@
           <property
             Id="0c9fa0a5-cf65-4679-8072-3093bfdca2da"
             name="AccountHolder"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4c697d04-a9d0-4498-9c1c-e1bc3b12090e"
+            name="Transactions&lt;list&gt;"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2440,6 +2451,14 @@
       <executionEvent
         Id="63305dd4-e256-484d-b18d-aa8ca0567324"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e30b1a84-1030-495f-95e7-183799161c83"
+        name="ATM"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
