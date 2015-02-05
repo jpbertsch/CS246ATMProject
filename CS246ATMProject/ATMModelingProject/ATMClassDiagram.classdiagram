@@ -72,8 +72,27 @@
           <property Id="50c210ba-fb8c-4a04-86d8-1d4107d585cd" name="PIN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1bf32c0e-43ad-4ed6-ae93-5351d6f661d1" />
           </property>
-          <property Id="21b5b28f-24cb-4ce9-ba15-47e48f4e23de" name="UserName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="21b5b28f-24cb-4ce9-ba15-47e48f4e23de" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="65bbc299-d9a1-4540-a55e-2762d36852e8" />
+          </property>
+          <property Id="54267de4-dedb-40cc-9225-f898ac805df2" name="MiddleInitial" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ae521d0c-0dc6-406b-a070-6a89e1746412" />
+          </property>
+          <property Id="7dda256f-c75b-4e22-8ef3-556724a6d2db" name="LastName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b118cf65-7b86-4a5d-836d-ac83562f0d9f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2e446904-4b91-4662-82b7-5fd2355c9948" name="Transactions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="af7d4d08-eb77-4135-a1d6-fd4a27af2011" />
+        <ownedAttributesInternal>
+          <property Id="514912d1-762f-47c4-ad48-4e70c58b3b37" name="!ListID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48944d88-0108-4b4c-80ae-af7b14d78ca8" />
+          </property>
+          <property Id="9e38726e-d67c-4067-8a04-cbeeaa7f3aa0" name="Transaction&lt;list&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fcb29ea8-47eb-4c83-b0f2-630d39cd4699" />
           </property>
         </ownedAttributesInternal>
       </class>
