@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7f5ca95a-5a5a-4dbb-8275-30dbcecd48c3" name="ATMUseCaseDiagram" linkedPackageId="56087033-b43d-4abc-9da7-89bd47e95ed8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="7f5ca95a-5a5a-4dbb-8275-30dbcecd48c3" name="ATMUseCaseDiagram" linkedPackageId="56087033-b43d-4abc-9da7-89bd47e95ed8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="2fb1f675-892f-4c57-81fa-e38a96f08255">
       <elementDefinition Id="d8422e9c-b679-4764-ab6b-a7523b54edfa" />
@@ -7,17 +7,11 @@
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
-    <packageHasProfileInstances Id="1697eb23-6cf5-4878-b689-26fbeecd078b">
-      <profileInstance Id="d6cb5c41-22ce-4b31-bd3a-8883614cc5d2" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+    <packageHasProfileInstances Id="03f769a7-8ad3-496d-8409-01263356edb0">
+      <profileInstance Id="a36ee115-0599-473d-b4f5-ce347c155ba2" name="TextTemplateBindings">
+        <elementDefinition Id="552fc884-5b3c-4e43-9dfc-a7212a1d42c8" />
       </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="8ada01e0-88e3-484f-952e-a4adcad69d4d">
-      <profileInstance Id="bd5b811a-3394-4cc3-8714-95728e8c2696" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      <elementDefinition Id="0494cc4d-23fd-413d-89b1-e95c5a48b125" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -157,5 +151,19 @@
   </packagedElements>
   <package Id="56087033-b43d-4abc-9da7-89bd47e95ed8" name="ATMModelingProject">
     <elementDefinition Id="e3b9c6d9-3f81-402b-b0c6-049c28d4bc4e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1697eb23-6cf5-4878-b689-26fbeecd078b">
+        <profileInstance Id="d6cb5c41-22ce-4b31-bd3a-8883614cc5d2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8ada01e0-88e3-484f-952e-a4adcad69d4d">
+        <profileInstance Id="bd5b811a-3394-4cc3-8714-95728e8c2696" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

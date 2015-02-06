@@ -30,6 +30,13 @@
       <SubType>Content</SubType>
       <DependentUpon>ATMClassDiagram.classdiagram</DependentUpon>
     </Content>
+    <Content Include="TransferSequenceDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TransferSequenceDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TransferSequenceDiagram.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="WithdrawalSequenceDiagram.sequencediagram">
       <SubType>Content</SubType>
     </Content>
