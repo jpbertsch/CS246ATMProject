@@ -3865,6 +3865,924 @@
         Id="28746169-8984-4eac-9c65-aedb0a6818a4"
         name="ExecutionEvent" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="4df8a553-40cb-4a63-83ab-ce13ce178e16"
+        name="CheckBalanceSequenceDiagram"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="103869d4-a083-4d1c-b276-98e819347961">
+            <body>User must have completed the Login use case previously</body>
+          </comment>
+          <comment
+            Id="25ee4837-96c9-459e-ac46-817b73c99a0c">
+            <body>ATM done checking balance, asks for other actions</body>
+          </comment>
+        </ownedCommentsInternal>
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="4feec6bf-ca10-4f7d-91db-24db3164635c"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="71e8fdd6-66a3-4d52-81c0-cf74505070d0"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="93820fe2-bd97-419e-8100-da95b905db13"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="3b51637b-3b21-4c18-95c1-ec557bdee51b"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e3506606-5ce0-486b-ac91-81c7bca78080"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="16004269-f57c-4c8d-bff8-564b56b2f25a"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="36325af9-5e09-4f3d-9984-adcdc8a39f77"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="bee7f480-6bc6-4921-b68f-61a5591d6465"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3ae4a4c2-0f75-4098-9547-e72f88155c47"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="93820fe2-bd97-419e-8100-da95b905db13"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7e94cca5-c490-4e89-9fa0-7ed09c92a270"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="19bd7349-6f1a-4784-ba8f-2281259c2d11"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3b51637b-3b21-4c18-95c1-ec557bdee51b"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8aa9b7a4-fede-4e95-9ea7-89cd28da4ab0"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b61f7c36-168f-4180-8e9f-4259944a695f"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="6cb76062-d296-4b11-b145-bfadef5d8575"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="91d9b7d2-06c7-4914-9cde-fbe1e0d8c05d"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="50389e81-3f2a-460d-8513-033222a88519"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="338ab8c6-7e68-4a1a-a644-fc0056f21ee3"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ccf6e35c-03d0-422c-b947-af28508f5cb1"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0b5d9a54-c7d9-48c3-960d-5cd6ba5fdf3f"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f5ec6b8f-57ce-44b8-b372-9587a1032ec1"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="6cb76062-d296-4b11-b145-bfadef5d8575"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="08742f2b-b806-41df-88fb-4f2d24b1848d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e3506606-5ce0-486b-ac91-81c7bca78080"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="91d9b7d2-06c7-4914-9cde-fbe1e0d8c05d"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d717cc74-e830-4514-9367-3cbdf09520f3"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="36325af9-5e09-4f3d-9984-adcdc8a39f77"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="16004269-f57c-4c8d-bff8-564b56b2f25a"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ee0f6412-8f78-4271-a792-504158a2c9ed"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2fccd3cf-e211-4590-aebe-2222c5919015"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="16004269-f57c-4c8d-bff8-564b56b2f25a"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="09a98d73-292d-493c-a133-e9397a08871f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ee0f6412-8f78-4271-a792-504158a2c9ed"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="50389e81-3f2a-460d-8513-033222a88519"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="338ab8c6-7e68-4a1a-a644-fc0056f21ee3"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2fccd3cf-e211-4590-aebe-2222c5919015"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="36325af9-5e09-4f3d-9984-adcdc8a39f77"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="99f4c45c-99e6-4548-9d39-948839673e94"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="21513fe9-818a-4b59-81da-c6516cf6e3fd"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="17c09636-03ed-4dc1-a557-114cbbc54825"
+                LastKnownName="Bank System"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="34323f3a-e5fc-4f64-a583-974160b0620f"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="c94856fb-2400-4cc2-b4c3-be63824569a9"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="36364a6d-6249-419a-97bc-5fd26cb24e87"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5345f4dc-9186-4634-97ba-e3df6983f5dd"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="c94856fb-2400-4cc2-b4c3-be63824569a9"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b5434ecc-260c-49a7-8334-3b98a1e9d73a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="17c09636-03ed-4dc1-a557-114cbbc54825"
+                LastKnownName="Bank System"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ccf6e35c-03d0-422c-b947-af28508f5cb1"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="36364a6d-6249-419a-97bc-5fd26cb24e87"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="17c09636-03ed-4dc1-a557-114cbbc54825"
+                LastKnownName="Bank System"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5345f4dc-9186-4634-97ba-e3df6983f5dd"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="17c09636-03ed-4dc1-a557-114cbbc54825"
+                LastKnownName="Bank System"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0b5d9a54-c7d9-48c3-960d-5cd6ba5fdf3f"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="34323f3a-e5fc-4f64-a583-974160b0620f"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8aaf6224-08b9-44fc-9318-dad641dc8de7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="17c09636-03ed-4dc1-a557-114cbbc54825"
+                LastKnownName="Bank System"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="f10a7a70-4c28-4dac-aa4b-99e24d731c43"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3ae4a4c2-0f75-4098-9547-e72f88155c47"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="bee7f480-6bc6-4921-b68f-61a5591d6465"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="346e7d63-1049-46c4-b434-d257d362b526"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="bee7f480-6bc6-4921-b68f-61a5591d6465"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="906599e2-9dba-4c60-a0f1-eff592702281"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="346e7d63-1049-46c4-b434-d257d362b526"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f5ec6b8f-57ce-44b8-b372-9587a1032ec1"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b61f7c36-168f-4180-8e9f-4259944a695f"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7e20f9c6-b957-4bb4-b65f-3d4d9e34016b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3ae4a4c2-0f75-4098-9547-e72f88155c47"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5f3dc275-9932-4d72-9ff8-1f6543938a4e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="71e8fdd6-66a3-4d52-81c0-cf74505070d0"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="75cc63a2-83df-4a45-a4b6-90c8bd5a4615"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="88970caa-342b-46bd-bed5-9b27820c5b78"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ec895bfb-ec08-46b3-8d7d-a4b11ab9e061"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e291ad9d-321d-4e83-8b56-30063507f766"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d89e1662-5140-4da7-a632-db3156215b76"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="e291ad9d-321d-4e83-8b56-30063507f766"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="4c1b9b29-be07-4788-8952-5d14c7492305"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d3ac4236-31bb-4588-a196-65886cd35e7e"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+                LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d89e1662-5140-4da7-a632-db3156215b76"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ec895bfb-ec08-46b3-8d7d-a4b11ab9e061"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c0ad3d2e-6eac-4527-96e4-c19aa3856ea8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="ATMModelingProject.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5558459f-81a3-4515-8c8f-209319b43641"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="5558459f-81a3-4515-8c8f-209319b43641"
+            name="User"
+            isActor="false"
+            lifelineDisplayName="User">
+            <represents>
+              <propertyMoniker
+                Id="d920f4d1-b7ba-42b9-959a-845098d78bcc"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="93820fe2-bd97-419e-8100-da95b905db13"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="71e8fdd6-66a3-4d52-81c0-cf74505070d0"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e291ad9d-321d-4e83-8b56-30063507f766"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ec895bfb-ec08-46b3-8d7d-a4b11ab9e061"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="2279ac0f-ddac-4b92-92bc-e4ace435dc68"
+            name="ATM Interface"
+            isActor="false"
+            lifelineDisplayName="ATM Interface">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="19bd7349-6f1a-4784-ba8f-2281259c2d11"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6cb76062-d296-4b11-b145-bfadef5d8575"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b61f7c36-168f-4180-8e9f-4259944a695f"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d3ac4236-31bb-4588-a196-65886cd35e7e"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="17c09636-03ed-4dc1-a557-114cbbc54825"
+            name="Bank System"
+            isActor="false"
+            lifelineDisplayName="Bank System">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="c94856fb-2400-4cc2-b4c3-be63824569a9"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="ATMModelingProject.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="34323f3a-e5fc-4f64-a583-974160b0620f"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="af52e1e6-da7e-416a-bd5d-41236338d9a1"
+            name="ActionPrompt"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="19bd7349-6f1a-4784-ba8f-2281259c2d11"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3b51637b-3b21-4c18-95c1-ec557bdee51b"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3e4f03fe-bb08-4f30-8b32-c75af5b39596"
+            name="ActionChoice(CheckBalance)"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e3506606-5ce0-486b-ac91-81c7bca78080"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="91d9b7d2-06c7-4914-9cde-fbe1e0d8c05d"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8b48b821-b5ae-4139-98dc-2398990b56f3"
+            name="AccountChoicePrompt"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="50389e81-3f2a-460d-8513-033222a88519"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ee0f6412-8f78-4271-a792-504158a2c9ed"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="0be956bc-36db-4af8-b7af-b6d4b275b5e3"
+            name="AccountChoice(SubAccount)"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2fccd3cf-e211-4590-aebe-2222c5919015"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="338ab8c6-7e68-4a1a-a644-fc0056f21ee3"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="581d7bce-517e-4669-9e00-c744ffcfd4ed"
+            name="RequestBalanceCheck(Account, SubAccount)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ccf6e35c-03d0-422c-b947-af28508f5cb1"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="36364a6d-6249-419a-97bc-5fd26cb24e87"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cb82e957-2e06-4b76-bd21-12c2f4663aaf"
+            name="&lt;&lt;returnChoceAccountBalance&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5345f4dc-9186-4634-97ba-e3df6983f5dd"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0b5d9a54-c7d9-48c3-960d-5cd6ba5fdf3f"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f965b7d8-41f4-467c-afd5-a4b018d5c852"
+            name="AccountBalanceMessage"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f5ec6b8f-57ce-44b8-b372-9587a1032ec1"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="346e7d63-1049-46c4-b434-d257d362b526"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6052d9b7-63ab-4220-8c6b-b2ec5840de40"
+            name="ActionPrompt"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d3ac4236-31bb-4588-a196-65886cd35e7e"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d89e1662-5140-4da7-a632-db3156215b76"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="d920f4d1-b7ba-42b9-959a-845098d78bcc"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="4413d99c-6da1-41c3-8586-41d1b2f0ad2a"
+                LastKnownName="User"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7e94cca5-c490-4e89-9fa0-7ed09c92a270"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="75cc63a2-83df-4a45-a4b6-90c8bd5a4615"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="08742f2b-b806-41df-88fb-4f2d24b1848d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7e20f9c6-b957-4bb4-b65f-3d4d9e34016b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="09a98d73-292d-493c-a133-e9397a08871f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="99f4c45c-99e6-4548-9d39-948839673e94"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b5434ecc-260c-49a7-8334-3b98a1e9d73a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8aaf6224-08b9-44fc-9318-dad641dc8de7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="906599e2-9dba-4c60-a0f1-eff592702281"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5f3dc275-9932-4d72-9ff8-1f6543938a4e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="4c1b9b29-be07-4788-8952-5d14c7492305"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c0ad3d2e-6eac-4527-96e4-c19aa3856ea8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
