@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="168e9c76-01db-4f35-8d3c-705cb7621f8e" name="WithdrawalSequenceDiagram" linkedPackageId="fa876705-09a5-4035-a214-db6f87909c7b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="096113d1-6c23-40ef-abb9-67bdfadd45bb">
-      <profileInstance Id="f77598cd-9e37-4018-9e9c-b0f9ddfc79c4" name="TextTemplateBindings">
-        <elementDefinition Id="552fc884-5b3c-4e43-9dfc-a7212a1d42c8" />
-      </profileInstance>
-      <elementDefinition Id="0494cc4d-23fd-413d-89b1-e95c5a48b125" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="168e9c76-01db-4f35-8d3c-705cb7621f8e" name="WithdrawalSequenceDiagram" linkedPackageId="fa876705-09a5-4035-a214-db6f87909c7b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="b9aa6540-622b-453f-a959-bed5f4992b64" name="WithdrawalSequenceDiagram" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -335,12 +327,6 @@
               <lifelineMoniker Id="c342b6bc-9c0e-40ec-8037-5305df2629d8" LastKnownName="ATM Interface" />
             </covered>
           </executionOccurrenceSpecification>
-          <operandOccurrenceSpecification Id="56b84b5e-7fc0-4c81-a87c-661cf262ad84" name="OperandOccurrenceSpecification12">
-            <elementDefinition Id="91581e54-d75e-4afc-956d-0e02af34a8bd" />
-            <covered>
-              <lifelineMoniker Id="3769a87f-ea8c-45e3-a7e9-988d7ae0fc48" LastKnownName="User" />
-            </covered>
-          </operandOccurrenceSpecification>
           <operandOccurrenceSpecification Id="4dbc57eb-fbb3-4222-95b3-fed99d5c555b" name="OperandOccurrenceSpecification10">
             <elementDefinition Id="d578979a-0136-42b9-9d85-b40303a3dafb" />
             <covered>
@@ -351,6 +337,12 @@
             <elementDefinition Id="f15c10be-51dc-42a8-a079-da1039fcbb39" />
             <covered>
               <lifelineMoniker Id="6564119d-06a8-46d4-987c-a3f1b477527e" LastKnownName="Bank System" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="56b84b5e-7fc0-4c81-a87c-661cf262ad84" name="OperandOccurrenceSpecification12">
+            <elementDefinition Id="91581e54-d75e-4afc-956d-0e02af34a8bd" />
+            <covered>
+              <lifelineMoniker Id="3769a87f-ea8c-45e3-a7e9-988d7ae0fc48" LastKnownName="User" />
             </covered>
           </operandOccurrenceSpecification>
           <behaviorExecutionSpecification Id="76e0a863-f894-4d54-b0f0-bea9630c1bf3" name="BehaviorExecutionSpecification2">
@@ -776,7 +768,7 @@
           </lifeline>
         </lifelines>
         <messages>
-          <message Id="c6e606c5-e030-49e2-b6ce-16210098b718" name="User swipes card to log into system" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="c6e606c5-e030-49e2-b6ce-16210098b718" name="LogInPrime(CardNum, AccountNum, userNum)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="488aeb79-56b0-4c36-ab63-1b33586a95cd" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="63d87982-a422-4359-8e55-d0fffa677385" LastKnownName="MessageOccurrenceSpecification2" />
@@ -785,7 +777,7 @@
               <messageOccurrenceSpecificationMoniker Id="e2e857b6-fa8e-4d57-8c1d-2dd5de9c825d" LastKnownName="MessageOccurrenceSpecification3" />
             </receiveEvent>
           </message>
-          <message Id="bebe80b0-08f1-40f1-9561-69bb26eb3ced" name="ATM gives card data to bank system" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="bebe80b0-08f1-40f1-9561-69bb26eb3ced" name="LogInPrime(CardNum, AccountNum, userNum)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="1bd5d156-9610-4c24-a095-6030c2d2aef7" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="a837f85d-135e-41b2-86f7-16bfdaa982a8" LastKnownName="MessageOccurrenceSpecification18" />
@@ -794,7 +786,7 @@
               <messageOccurrenceSpecificationMoniker Id="02a215e9-cec2-4014-b49a-d33f4debec98" LastKnownName="MessageOccurrenceSpecification19" />
             </receiveEvent>
           </message>
-          <message Id="c1c35a5d-69c9-4297-97ff-240cf33d7433" name="Bank system approves and requests Pin for account access" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="c1c35a5d-69c9-4297-97ff-240cf33d7433" name="LogInReadied" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="5536116f-f7f6-4ee4-9fb4-655a32d88dca" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="c402d861-4c6f-4454-a40b-a1ca7367720a" LastKnownName="MessageOccurrenceSpecification20" />
@@ -803,7 +795,7 @@
               <messageOccurrenceSpecificationMoniker Id="7f424da4-245f-4470-ad0f-25200c12a684" LastKnownName="MessageOccurrenceSpecification21" />
             </receiveEvent>
           </message>
-          <message Id="0ae3bfd2-6b81-4543-a62c-d54ce60de118" name="ATM prompts user to enter PIN" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="0ae3bfd2-6b81-4543-a62c-d54ce60de118" name="PINPromptMessage" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="9d6078af-b435-4ee0-8f2b-5bd2987e7883" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="3ddcec49-8c84-4e9e-94cf-eccff728eba1" LastKnownName="MessageOccurrenceSpecification22" />
@@ -812,7 +804,7 @@
               <messageOccurrenceSpecificationMoniker Id="300d7728-394b-4cc1-bb9d-62ce5fb04131" LastKnownName="MessageOccurrenceSpecification23" />
             </receiveEvent>
           </message>
-          <message Id="f00dab31-c2a9-420e-95ed-42bd892ff506" name="User enters PIN" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="f00dab31-c2a9-420e-95ed-42bd892ff506" name="LogInPIN(PIN)" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="bb12b553-8d6e-440e-a6a2-c101083bff42" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="34732f05-685b-4525-8eda-1042d5ffc000" LastKnownName="MessageOccurrenceSpecification24" />
@@ -821,7 +813,7 @@
               <messageOccurrenceSpecificationMoniker Id="96c10d0b-21e5-4dcb-83a5-29b2295c58be" LastKnownName="MessageOccurrenceSpecification25" />
             </receiveEvent>
           </message>
-          <message Id="d66178dc-98b8-45a8-bb53-c998fc08bd85" name="ATM gives entered PIN to bank system" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="d66178dc-98b8-45a8-bb53-c998fc08bd85" name="LogInPIN(PIN)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="c860142a-6a83-40d3-aee6-dc090dad7997" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="42eacb93-bb26-46a8-be0d-07904306dc71" LastKnownName="MessageOccurrenceSpecification28" />
@@ -830,7 +822,7 @@
               <messageOccurrenceSpecificationMoniker Id="b2a4ca4c-f54c-4a89-b0f0-79aa7a100058" LastKnownName="MessageOccurrenceSpecification29" />
             </receiveEvent>
           </message>
-          <message Id="c2594017-b3e7-490c-bd38-eb3589b677ea" name="Bank system approves or denies access" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="c2594017-b3e7-490c-bd38-eb3589b677ea" name="LogInStatus(LogInStatus)" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="9e9e9b1f-64ee-4f58-acb0-eb109503ab56" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="9b372a81-b9b6-4fa5-b8a9-e812608ac3c8" LastKnownName="MessageOccurrenceSpecification30" />
@@ -839,7 +831,7 @@
               <messageOccurrenceSpecificationMoniker Id="d1feca55-e04b-4620-bf1e-6a4b9615725f" LastKnownName="MessageOccurrenceSpecification31" />
             </receiveEvent>
           </message>
-          <message Id="1b5c70a5-2b4d-4651-861c-904cd21dd7ae" name="ATM logs user into system or returns login error" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="1b5c70a5-2b4d-4651-861c-904cd21dd7ae" name="LogInStatus Message/Prompt" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="78dd571d-fa2b-4ecc-848e-8a0e71ac53af" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="b6f99659-0644-4f64-ad04-d2f474ddd63a" LastKnownName="MessageOccurrenceSpecification4" />
@@ -848,7 +840,7 @@
               <messageOccurrenceSpecificationMoniker Id="6dcc5e3a-228c-445f-a3fd-7ff6e0c66a58" LastKnownName="MessageOccurrenceSpecification5" />
             </receiveEvent>
           </message>
-          <message Id="c19f5b54-95f8-4334-b9ea-c39c1547ab6d" name="ATM give user action interface and prompts for choice" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+          <message Id="c19f5b54-95f8-4334-b9ea-c39c1547ab6d" name="ActionPrompt" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
             <elementDefinition Id="a663891d-8ceb-4ad4-88aa-df432fc0ec7e" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="3f0cbdbd-c88b-4364-b957-48c1f23ce001" LastKnownName="MessageOccurrenceSpecification6" />
@@ -857,7 +849,7 @@
               <messageOccurrenceSpecificationMoniker Id="f32ec7c8-3319-452e-b3fa-e9f9b41b5b0b" LastKnownName="MessageOccurrenceSpecification7" />
             </receiveEvent>
           </message>
-          <message Id="2908feda-1e8d-4ab3-86b8-1c070f752c13" name="User chooses to withdraw money" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="2908feda-1e8d-4ab3-86b8-1c070f752c13" name="ActionChoice(Withdraw)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="9a355860-2c28-47c9-8f9d-6b8e9c0519c5" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="eabb739a-f0f7-4c75-b305-3e48cd5e0c81" LastKnownName="MessageOccurrenceSpecification8" />
@@ -866,7 +858,7 @@
               <messageOccurrenceSpecificationMoniker Id="c44f4848-a8e2-4f4f-94ef-ca8ec0dcf293" LastKnownName="MessageOccurrenceSpecification9" />
             </receiveEvent>
           </message>
-          <message Id="0ff0410c-b0bc-44bf-b244-be3f5e57abc7" name="ATM asks for amount to withdraw" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="0ff0410c-b0bc-44bf-b244-be3f5e57abc7" name="AmountPrompt" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="c9bd11ed-70da-4b03-a5a0-fe06eeba7d95" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="6fa98e2f-f9ec-4a89-83ea-f2e4d018c651" LastKnownName="MessageOccurrenceSpecification10" />
@@ -875,7 +867,7 @@
               <messageOccurrenceSpecificationMoniker Id="953d09b2-8bd5-45c2-9476-d73df959d160" LastKnownName="MessageOccurrenceSpecification11" />
             </receiveEvent>
           </message>
-          <message Id="8ccde3d8-5b00-4a22-9bc2-c5cce3bfdd91" name="User gives monetary amount to withdraw" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="8ccde3d8-5b00-4a22-9bc2-c5cce3bfdd91" name="Withdrawal(Amount, Account)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="5e6fdbcb-0400-446c-a1d6-ec559d5d03c2" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="95b92b41-95c3-4f8a-9723-804c4330463e" LastKnownName="MessageOccurrenceSpecification12" />
@@ -884,7 +876,7 @@
               <messageOccurrenceSpecificationMoniker Id="1019a6e7-4a3c-4635-9596-2e1ad2202382" LastKnownName="MessageOccurrenceSpecification13" />
             </receiveEvent>
           </message>
-          <message Id="e7ef9c66-94bc-463a-9cda-e726d629a5d7" name="ATM gives bank system amount to withdraw" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+          <message Id="e7ef9c66-94bc-463a-9cda-e726d629a5d7" name="Withdrawal(Amount, Account)" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
             <elementDefinition Id="adfa4d40-2287-4113-a9d5-17c89a14518c" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="98e0f589-a3c9-48aa-98a7-01ff9db91cd3" LastKnownName="MessageOccurrenceSpecification34" />
@@ -893,7 +885,7 @@
               <messageOccurrenceSpecificationMoniker Id="f4ebebf8-548d-493c-89c6-0c477d3b36bb" LastKnownName="MessageOccurrenceSpecification35" />
             </receiveEvent>
           </message>
-          <message Id="d662c7ae-045c-46a2-abfc-dab40f4e40b9" name="Bank system approves or denies transaction, creates transaction record" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="d662c7ae-045c-46a2-abfc-dab40f4e40b9" name="WithdrawaResult(Status)" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="1f377b0e-284d-4362-8399-fac60865fb8e" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="b164b140-25dd-47a2-a4c3-a98d653e822b" LastKnownName="MessageOccurrenceSpecification36" />
@@ -902,7 +894,7 @@
               <messageOccurrenceSpecificationMoniker Id="df6f3e6d-1cae-471b-8634-bb84ff04664c" LastKnownName="MessageOccurrenceSpecification37" />
             </receiveEvent>
           </message>
-          <message Id="aa47ca7d-88b6-4938-ac8f-4420be71792b" name="ATM returns amount requested or denies transaction" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+          <message Id="aa47ca7d-88b6-4938-ac8f-4420be71792b" name="WithdrawalResult" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
             <elementDefinition Id="31f15d24-b421-475f-8477-be5582d1dded" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="4c84ae62-f62e-45f1-9448-5072a467fd0f" LastKnownName="MessageOccurrenceSpecification14" />
@@ -911,7 +903,7 @@
               <messageOccurrenceSpecificationMoniker Id="98907b9c-a9d1-4551-8f1c-a7dae76cf7b7" LastKnownName="MessageOccurrenceSpecification15" />
             </receiveEvent>
           </message>
-          <message Id="f60fcd48-0fd1-4f64-8d90-8adb8ebfc33b" name="ATM logs out user and enters standby mode" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+          <message Id="f60fcd48-0fd1-4f64-8d90-8adb8ebfc33b" name="LogOutMessage" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
             <elementDefinition Id="db450a00-3236-401e-9465-9fe65c73dd82" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="56b7f5ba-369b-45e4-9568-71b5e9f3d875" LastKnownName="MessageOccurrenceSpecification16" />
@@ -1041,6 +1033,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="096113d1-6c23-40ef-abb9-67bdfadd45bb">
+        <profileInstance Id="f77598cd-9e37-4018-9e9c-b0f9ddfc79c4" name="TextTemplateBindings">
+          <elementDefinition Id="552fc884-5b3c-4e43-9dfc-a7212a1d42c8" />
+        </profileInstance>
+        <elementDefinition Id="0494cc4d-23fd-413d-89b1-e95c5a48b125" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="e3b9c6d9-3f81-402b-b0c6-049c28d4bc4e"
   name="ATMModelingProject" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1188,16 +1188,6 @@
             </covered>
           </executionOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="91581e54-d75e-4afc-956d-0e02af34a8bd"
-            name="OperandOccurrenceSpecification12">
-            <covered>
-              <lifelineMoniker
-                Id="51ce94b9-1589-4220-8f87-f19f097fbc78"
-                LastKnownName="User"
-                LastKnownLocation="ATMModelingProject.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
             Id="d578979a-0136-42b9-9d85-b40303a3dafb"
             name="OperandOccurrenceSpecification10">
             <covered>
@@ -1214,6 +1204,16 @@
               <lifelineMoniker
                 Id="9bdfe80e-46b5-46ad-bf9c-5926a02ed3e2"
                 LastKnownName="Bank System"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="91581e54-d75e-4afc-956d-0e02af34a8bd"
+            name="OperandOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="51ce94b9-1589-4220-8f87-f19f097fbc78"
+                LastKnownName="User"
                 LastKnownLocation="ATMModelingProject.uml" />
             </covered>
           </operandOccurrenceSpecification>
@@ -2045,7 +2045,7 @@
         <messages>
           <message
             Id="488aeb79-56b0-4c36-ab63-1b33586a95cd"
-            name="User swipes card to log into system"
+            name="LogInPrime(CardNum, AccountNum, userNum)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -2064,7 +2064,7 @@
           </message>
           <message
             Id="1bd5d156-9610-4c24-a095-6030c2d2aef7"
-            name="ATM gives card data to bank system"
+            name="LogInPrime(CardNum, AccountNum, userNum)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -2083,7 +2083,7 @@
           </message>
           <message
             Id="5536116f-f7f6-4ee4-9fb4-655a32d88dca"
-            name="Bank system approves and requests Pin for account access"
+            name="LogInReadied"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2102,7 +2102,7 @@
           </message>
           <message
             Id="9d6078af-b435-4ee0-8f2b-5bd2987e7883"
-            name="ATM prompts user to enter PIN"
+            name="PINPromptMessage"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -2121,7 +2121,7 @@
           </message>
           <message
             Id="bb12b553-8d6e-440e-a6a2-c101083bff42"
-            name="User enters PIN"
+            name="LogInPIN(PIN)"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2140,7 +2140,7 @@
           </message>
           <message
             Id="c860142a-6a83-40d3-aee6-dc090dad7997"
-            name="ATM gives entered PIN to bank system"
+            name="LogInPIN(PIN)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -2159,7 +2159,7 @@
           </message>
           <message
             Id="9e9e9b1f-64ee-4f58-acb0-eb109503ab56"
-            name="Bank system approves or denies access"
+            name="LogInStatus(LogInStatus)"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2178,7 +2178,7 @@
           </message>
           <message
             Id="78dd571d-fa2b-4ecc-848e-8a0e71ac53af"
-            name="ATM logs user into system or returns login error"
+            name="LogInStatus Message/Prompt"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2197,7 +2197,7 @@
           </message>
           <message
             Id="a663891d-8ceb-4ad4-88aa-df432fc0ec7e"
-            name="ATM give user action interface and prompts for choice"
+            name="ActionPrompt"
             messageKind="Complete"
             messageSort="AsynchCall"
             createSelfMessage="false">
@@ -2216,7 +2216,7 @@
           </message>
           <message
             Id="9a355860-2c28-47c9-8f9d-6b8e9c0519c5"
-            name="User chooses to withdraw money"
+            name="ActionChoice(Withdraw)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -2235,7 +2235,7 @@
           </message>
           <message
             Id="c9bd11ed-70da-4b03-a5a0-fe06eeba7d95"
-            name="ATM asks for amount to withdraw"
+            name="AmountPrompt"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2254,7 +2254,7 @@
           </message>
           <message
             Id="5e6fdbcb-0400-446c-a1d6-ec559d5d03c2"
-            name="User gives monetary amount to withdraw"
+            name="Withdrawal(Amount, Account)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -2273,7 +2273,7 @@
           </message>
           <message
             Id="adfa4d40-2287-4113-a9d5-17c89a14518c"
-            name="ATM gives bank system amount to withdraw"
+            name="Withdrawal(Amount, Account)"
             messageKind="Complete"
             messageSort="SynchCall"
             createSelfMessage="false">
@@ -2292,7 +2292,7 @@
           </message>
           <message
             Id="1f377b0e-284d-4362-8399-fac60865fb8e"
-            name="Bank system approves or denies transaction, creates transaction record"
+            name="WithdrawaResult(Status)"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2311,7 +2311,7 @@
           </message>
           <message
             Id="31f15d24-b421-475f-8477-be5582d1dded"
-            name="ATM returns amount requested or denies transaction"
+            name="WithdrawalResult"
             messageKind="Complete"
             messageSort="Reply"
             createSelfMessage="false">
@@ -2330,7 +2330,7 @@
           </message>
           <message
             Id="db450a00-3236-401e-9465-9fe65c73dd82"
-            name="ATM logs out user and enters standby mode"
+            name="LogOutMessage"
             messageKind="Complete"
             messageSort="AsynchCall"
             createSelfMessage="false">
@@ -3293,22 +3293,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="7df38b6e-ab44-472f-840b-91791662a573"
-            name="MessageOccurrenceSpecification82">
-            <covered>
-              <lifelineMoniker
-                Id="1ac83613-da04-4b79-b621-292862cd1ac6"
-                LastKnownName="Bank System"
-                LastKnownLocation="ATMModelingProject.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="05ef5337-51b0-4eff-97e9-7dbe168aaecd"
             name="MessageOccurrenceSpecification83">
             <covered>
               <lifelineMoniker
                 Id="988a8730-82bd-45db-852e-527627784b8f"
                 LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7df38b6e-ab44-472f-840b-91791662a573"
+            name="MessageOccurrenceSpecification82">
+            <covered>
+              <lifelineMoniker
+                Id="1ac83613-da04-4b79-b621-292862cd1ac6"
+                LastKnownName="Bank System"
                 LastKnownLocation="ATMModelingProject.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -3463,22 +3463,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <operandOccurrenceSpecification
-            Id="85f59d6d-1f17-4bdd-981f-faa4f60d917c"
-            name="OperandOccurrenceSpecification38">
-            <covered>
-              <lifelineMoniker
-                Id="48da5d35-4737-425a-b862-2cae7b139900"
-                LastKnownName="User"
-                LastKnownLocation="ATMModelingProject.uml" />
-            </covered>
-          </operandOccurrenceSpecification>
-          <operandOccurrenceSpecification
             Id="6e1dc7f4-eadf-4f0f-a60c-2996cc32ca56"
             name="OperandOccurrenceSpecification40">
             <covered>
               <lifelineMoniker
                 Id="988a8730-82bd-45db-852e-527627784b8f"
                 LastKnownName="ATM Interface"
+                LastKnownLocation="ATMModelingProject.uml" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification
+            Id="85f59d6d-1f17-4bdd-981f-faa4f60d917c"
+            name="OperandOccurrenceSpecification38">
+            <covered>
+              <lifelineMoniker
+                Id="48da5d35-4737-425a-b862-2cae7b139900"
+                LastKnownName="User"
                 LastKnownLocation="ATMModelingProject.uml" />
             </covered>
           </operandOccurrenceSpecification>
