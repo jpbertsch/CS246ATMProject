@@ -1,21 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2e907a61-58ea-4deb-8fcc-6464af014747" name="ATMClassDiagram" linkedPackageId="6af425b4-8547-4e6a-9a13-193b87ae7449" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="fb471f37-9b76-4866-9048-e7cd47d997dc">
-      <profileInstance Id="81899383-ea79-4d67-a56f-1c3c6ca7e9bf" name="TextTemplateBindings">
-        <elementDefinition Id="552fc884-5b3c-4e43-9dfc-a7212a1d42c8" />
-      </profileInstance>
-      <elementDefinition Id="0494cc4d-23fd-413d-89b1-e95c5a48b125" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="12c0e736-54bc-4d4b-a47b-295595ab3840" name="Transaction Record" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="fb759789-230a-4491-9acc-00e828890d31" />
         <ownedAttributesInternal>
-          <property Id="16ce5b8e-d52c-4ea8-8923-156d46ea3e9a" name="!TransactionID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="de80106d-de50-4c72-b206-0c9e43c0c775" />
-          </property>
           <property Id="431a55da-2850-417c-934f-ddf097af0a18" name="ParentAccount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="78dacbc4-75a2-4edf-8266-ec7cfc94bef9" />
           </property>
@@ -31,16 +20,21 @@
           <property Id="c4530c3e-2b63-414a-be3a-3459deaad025" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="58339a10-8492-400b-8634-ceacfe8886f6" />
           </property>
+          <property Id="69157300-e69b-45bc-be19-2dd6439e87c5" name="Type" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5b469762-89cc-4820-a934-d8dbf73a0a0c" />
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f4ab50ff-1c54-493a-a06d-2b03aa5f9821" name="Details" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d242116-0058-446b-a0d7-b9bfaa929a86" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="1ae8803f-63f6-4f56-b1e8-f6fb456e5803" name="Account" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="dfacbaa6-b355-4428-af49-ca2ce4255e1c" />
         <ownedAttributesInternal>
-          <property Id="8090d992-ed71-4f5d-bf9e-910f72f5e55e" name="!AccountID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a6bf0137-ebd4-408f-8799-a73445bb5199" />
-          </property>
           <property Id="fff1c173-2484-4b59-81a4-fcbc24830b40" name="AccountUsers" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="b58f8ae0-13e3-4f69-8999-50570d0ccb46" />
           </property>
@@ -50,19 +44,33 @@
           <property Id="54bb0f3e-6435-4c21-9f10-ea62a2d52b92" name="AccountHolder" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0c9fa0a5-cf65-4679-8072-3093bfdca2da" />
           </property>
-          <property Id="ce6e368c-6288-418f-8f1c-e40df446d563" name="Transactions&lt;list&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="ce6e368c-6288-418f-8f1c-e40df446d563" name="Transactions" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="4c697d04-a9d0-4498-9c1c-e1bc3b12090e" />
           </property>
+          <property Id="55ef8b35-29b4-463d-af84-9c0a51e66e75" name="AccountNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="50cf6a40-62e1-4965-b472-017b25b0e52a" />
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="eb68606a-6a05-4cfb-b0d8-9b4927da67c3" name="Deposit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f4c6d2b5-e460-4369-9c47-10dd1a845880" />
+          </operation>
+          <operation Id="994302f8-86ab-4550-9c56-8b113cc41b21" name="Withdraw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="59d36221-9237-4f25-b345-7ebf54ee1139" />
+          </operation>
+          <operation Id="aa428b68-ece8-4a10-99d7-8abcab099bac" name="Transfer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5b62d075-d4ac-4f2e-b8e5-e11dfa447cf9" />
+          </operation>
+          <operation Id="8e551d8a-be44-4101-97c7-65984b79f3d1" name="CheckBalance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bdefb5de-bd31-4a4c-a88d-6a40bd0ee3d1" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="66815d38-13e2-4f6a-ae3e-8fd6860921d2" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4413d99c-6da1-41c3-8586-41d1b2f0ad2a" />
         <ownedAttributesInternal>
-          <property Id="67a62a21-770b-4ba5-928c-0a9089ef41e7" name="!UserID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="4fc36f11-b86b-4730-b908-4343b3718ea3" />
-          </property>
           <property Id="caf2b8e1-07f6-469f-a0c7-abcaa614b7c5" name="Account" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="638c8588-7f27-4c57-9942-25767db6c094" />
           </property>
@@ -79,11 +87,20 @@
             <elementDefinition Id="b118cf65-7b86-4a5d-836d-ac83562f0d9f" />
           </property>
         </ownedAttributesInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
-      <class Id="206f8e61-f7ba-49d2-9ffa-68ffa7bb3fd8" name="ATM" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="e30b1a84-1030-495f-95e7-183799161c83" />
+        <ownedOperationsInternal>
+          <operation Id="9b4cac69-59ca-40e5-a985-f843bfd6cad3" name="CreateAccount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e6faa719-dfd3-4376-bf33-f19de96eecf0" />
+          </operation>
+          <operation Id="16c3e3bf-ceff-4abf-889e-64da6e62371b" name="CloseAccount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c399d609-ccfa-4061-85ab-7f152141ec8d" />
+          </operation>
+          <operation Id="a8ca9d28-2eb5-4ccc-8f06-dd20e8938982" name="Login" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b662abc6-fdc3-4410-814e-6dea1f127eb6" />
+          </operation>
+          <operation Id="a0362746-89d3-4cd6-bf13-71bb384a072d" name="Logout" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bf8ad1a9-2e0c-4c73-8e16-00e604c2e39b" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
@@ -101,6 +118,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="fb471f37-9b76-4866-9048-e7cd47d997dc">
+        <profileInstance Id="81899383-ea79-4d67-a56f-1c3c6ca7e9bf" name="TextTemplateBindings">
+          <elementDefinition Id="552fc884-5b3c-4e43-9dfc-a7212a1d42c8" />
+        </profileInstance>
+        <elementDefinition Id="0494cc4d-23fd-413d-89b1-e95c5a48b125" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>
