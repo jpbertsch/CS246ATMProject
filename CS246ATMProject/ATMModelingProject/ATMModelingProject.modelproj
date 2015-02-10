@@ -37,6 +37,13 @@
       <SubType>Content</SubType>
       <DependentUpon>CheckBalanceSequenceDiagram.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="LoginSequenceDiagram.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LoginSequenceDiagram.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LoginSequenceDiagram.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="TransferSequenceDiagram.sequencediagram">
       <SubType>Content</SubType>
     </Content>
